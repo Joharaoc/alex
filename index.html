@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<!--
+	Identity by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>ABC Nyelvstúdió</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main">
+						<header>
+							<span class="avatar"><img src="images/avatar.jpg" alt="" /></span>
+							<h1>ABC Nyelvstúdió&reg;</h1>
+							<p>Szvarnasz Alexandrosz</p>
+						</header>
+						<ul class="simple">
+							<li>Nyelvoktatás</li>
+							<li>Tolmácsolás</li>
+							<li>Fordítás</li>
+						</ul>
+						<hr>
+						<p>
+							<address class="">
+							<a id="email" href="#" class="icon"><i class="far fa-envelope"></i> <span></span></a></br>
+						  <a id="mobil" class="icon"> <i class="fa fa-mobile-alt"></i> <span></span></a></br>
+						  <a id="tel" class="icon"> <i class="fas fa-phone-alt"></i> <span></span></a></br>
+						  <a id="addr" class="icon"> <i class="fas fa-map-marker-alt"></i> <span></span></a></br>
+						</p>
+						<footer>
+							<ul class="icons">
+								<li><a href="https://www.facebook.com/abcnyelv" class="icon brands fa-facebook-f">Facebook</a></li>
+							</ul>
+						</footer>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<li>&copy; Szvarnasz Alexandrosz</li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script>
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+
+				function render_link(e, html, href){
+					if(e){
+					e.querySelector('span').innerHTML=" "+html;
+					e.href=href;
+					}
+				}
+
+				var email="abcnyelv"+"@"+"abcnyelv.hu";
+				render_link(
+					document.querySelector('#email'),
+					email,
+					'mailto:' + email
+				);
+				var addr="5600 "+"Békéscsaba"+"  Bethlen u. 7/1";
+				render_link(
+					document.querySelector('#addr'),
+					addr,
+					"https://goo.gl/maps/kCCTRA89svi3XikM8"
+				);
+
+				var mobil_pretty = "06 20 "+"9"+" 444-546";
+		 		var mobil_link = 'tel:' + '06209444546';
+				render_link(
+					document.querySelector('#mobil'),
+					mobil_pretty,
+					mobil_link
+				);
+
+				var tel_pretty = "06 "+"66"+" 444-546";
+		 		var tel_link = 'tel:' + '0666444546';
+				render_link(
+					document.querySelector('#tel'),
+					tel_pretty,
+					tel_link
+				);
+
+
+
+
+			</script>
+
+	</body>
+</html>
